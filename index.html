@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elevator UX Case Study</title>
 
@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/c207909c25.js" crossorigin="anonymous"></script>
+    <!-- FontAwesome (CDN stylesheet - no kit required) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1Cm7gGZfYwG8Q1b2j0w9qk0N4Q6oYq3wQ5y3bOa5mQ9n1KQpQ5Yd5YFqQ6gK9m1Z3v1x3k9M6Yq3bOa5mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -41,19 +41,11 @@
         }
     </style>
 
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+<!-- Removed importmap: Vite will bundle React during build; external importmaps can cause 403s on some hosts -->
+<link rel="stylesheet" href="./index.css">
 </head>
 <body class="bg-[#fdfbf7]">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
