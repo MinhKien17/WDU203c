@@ -1,0 +1,24 @@
+/* Minimal app stylesheet to avoid 404s and provide base styles */
+:root{
+  --page-bg: #fdfbf7;
+}
+html,body,#root{
+  height:100%;
+}
+body{
+  margin:0;
+  background:var(--page-bg);
+  font-family: 'Patrick Hand', cursive;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.sketch-box{
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+/* Small helper utilities used by the app */
+.center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
